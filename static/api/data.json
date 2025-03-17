@@ -1,0 +1,122 @@
+{
+    "main": {
+        "name": "Howard Hontiveros",
+        "occupation": "Web Developer",
+        "description": "",
+        "yearofexperience": "1 year, 5 months",
+        "age": "24",
+        "designation": "Web Developer",
+        "image": "/images/1.png",
+        "fullimage": "/images/2.png",
+        "bio": "Hi there! I've always been fascinated by technology and software development, which led me to pursue a career as a Back-end Developer. With experience in Laravel, REST APIs, and PostgreSQL, MySQL, I enjoy building efficient and reliable systems that contribute to business success. I'm eager to grow as a Software Engineer in a dynamic company where I can refine my skills, tackle challenging projects, and make a meaningful impact.",
+        "contactmessage": "Get in touch with me to to build any software for your business.!",
+        "email": "hontiveros.howard@gmail.com",
+        "phone": "+63 949 417 8345",
+        "mapaddress": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d406.11061926457865!2d120.98073280491397!3d14.45036742307973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1742229475939!5m2!1sen!2sph",
+        "address": {
+            "street": "02 Guinto St. Manuela V",
+            "city": "Las Piñas City",
+            "state": "Metro Manila",
+            "zip": "1740"
+        },
+        "resumedownload": "https://drive.google.com/file/d/1KnxeDS3-mUC3yhEZuzhGjCEq0l_AgzM2/view",
+        "social": [
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/howard-hontiveros/",
+                "className": "fa fa-linkedin"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/hwrd2000",
+                "className": "fa fa-github"
+            },
+            {
+                "name": "facebook",
+                "url": "https://www.facebook.com",
+                "className": "fa fa-facebook"
+            },
+            {
+                "name": "instagram",
+                "url": "https://www.instagram.com",
+                "className": "fa fa-instagram"
+            }
+        ]
+    },
+    "resume": {
+        "skillmessage": "My Programming Language Proficiency",
+        "education": [
+            {
+            "school": "University of Perpetual Help System DALTA - Las Piñas",
+            "degree": "Bachelor of Science in Information Technology",
+            "graduated": "August 2023",
+            "description": ""
+            }
+        ],
+        "work": [
+            {
+            "company": "Seaversity Inc.",
+            "title": "Back-End Developer",
+            "years": "Oct 2023 - March 2025",
+            "description": "Developed and deployed Inventory, Academic, Admission, and Human Resource Management Systems for a Smart Campus Project using Laravel, REST APIs, PostgreSQL, MySQL."
+            },
+            {
+                "company": "Fortress Tech and Creative Solutions",
+                "title": "Software Developer Intern",
+                "years": "March 2023 - July 2023",
+                "description": "Tasked with designing and developing the company's website using HTML, CSS, JavaScript, and Bootstrap."
+            }
+        ]
+    },
+    "portfolio": {
+        "projects": [{
+                "no":"01",
+                "title": "Inventory Management System",
+                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set.",
+                "url": ""
+            },
+            {
+                "no":"02",
+                "title": "Academic Management System",
+                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set.",
+                "url": ""
+            },
+            {
+                "no":"03",
+                "title": "Admission Management System",
+                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set.",
+                "url": ""
+            },
+            {
+                "no":"04",
+                "title": "Human Resource Management System",
+                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set.",
+                "url": ""
+            }
+        ]
+    },
+    "services": {
+        "services": [
+            {
+                "no": "01",
+                "title": "Web Development",
+                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set."
+            },
+            {
+                "no": "02",
+                "title": "UI/UX Design",
+                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set."
+            },
+            {
+                "no": "03",
+                "title": "Web Design",
+                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set."
+            },
+            {
+                "no": "04",
+                "title": "Graphic Design",
+                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set."
+            }
+        ]
+    }
+}

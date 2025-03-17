@@ -1,0 +1,30 @@
+[
+  {
+    "name": "About",
+    "path": "/About",
+    "component": "/var/www/personal/portfolio/pages/About.vue",
+    "chunkName": "pages/About",
+    "_name": "_f54ab786"
+  },
+  {
+    "name": "Contact",
+    "path": "/Contact",
+    "component": "/var/www/personal/portfolio/pages/Contact.vue",
+    "chunkName": "pages/Contact",
+    "_name": "_c8814560"
+  },
+  {
+    "name": "Projects",
+    "path": "/Projects",
+    "component": "/var/www/personal/portfolio/pages/Projects.vue",
+    "chunkName": "pages/Projects",
+    "_name": "_68a58b0c"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/var/www/personal/portfolio/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_2da05f22"
+  }
+]

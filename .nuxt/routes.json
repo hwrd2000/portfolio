@@ -1,24 +1,24 @@
 [
   {
-    "name": "About",
-    "path": "/About",
-    "component": "/var/www/personal/portfolio/pages/About.vue",
-    "chunkName": "pages/About",
-    "_name": "_f54ab786"
+    "name": "about",
+    "path": "/about",
+    "component": "/var/www/personal/portfolio/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_0de8845d"
   },
   {
-    "name": "Contact",
-    "path": "/Contact",
-    "component": "/var/www/personal/portfolio/pages/Contact.vue",
-    "chunkName": "pages/Contact",
-    "_name": "_c8814560"
+    "name": "contact",
+    "path": "/contact",
+    "component": "/var/www/personal/portfolio/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_3855b570"
   },
   {
-    "name": "Projects",
-    "path": "/Projects",
-    "component": "/var/www/personal/portfolio/pages/Projects.vue",
-    "chunkName": "pages/Projects",
-    "_name": "_68a58b0c"
+    "name": "projects",
+    "path": "/projects",
+    "component": "/var/www/personal/portfolio/pages/projects.vue",
+    "chunkName": "pages/projects",
+    "_name": "_7c3c334c"
   },
   {
     "name": "index",

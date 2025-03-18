@@ -57,41 +57,6 @@
     </div>
 </section>
 
-
-<section class="w3l-services py-5 w3l-resume ">
-    <div class="blog py-5" id="services">
-        <div class="container py-lg-5">
-            <h5 class="title-small text-center">Services</h5>
-            <h3 class="title-big text-center mb-sm-5 mb-4">What I do for you</h3>
-            <div class="row">
-                
-                    
-                    <div class="col-md-4 col-sm-12 col-xs-12" v-for="service in data.services.services" v-bind:key="service">
-                        <div class="item">
-                            <div class="card">
-                                <div class="box-wrap">
-                                    <div class="icon">
-                                        <span class="fa fa-pencil-square-o"></span>
-                                    </div>
-                                    <h4 class="number">{{service.no}}</h4>
-                                    <h4><a >{{service.title}}</a></h4>
-                                    <p>{{service.description}}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-
-            </div>
-            <div class="mt-5 text-more">
-                <p class="mt-4 pt-3 sample text-center">
-                    
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="w3l-services">
     <div class="w3l-achievements py-5" id="services">
         <div class="container py-lg-5">

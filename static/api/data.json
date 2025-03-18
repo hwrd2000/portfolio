@@ -71,25 +71,25 @@
         "projects": [{
                 "no":"01",
                 "title": "Inventory Management System",
-                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set.",
+                "description": "A system for tracking and managing stock levels, orders, and suppliers.",
                 "url": ""
             },
             {
                 "no":"02",
                 "title": "Academic Management System",
-                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set.",
+                "description": "A platform for managing student records, courses, and faculty operations.",
                 "url": ""
             },
             {
                 "no":"03",
                 "title": "Admission Management System",
-                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set.",
+                "description": "A system that streamlines student enrollment and application processing.",
                 "url": ""
             },
             {
                 "no":"04",
                 "title": "Human Resource Management System",
-                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set.",
+                "description": "A tool for handling employee records, payroll, and performance tracking.",
                 "url": ""
             }
         ]
@@ -99,23 +99,117 @@
             {
                 "no": "01",
                 "title": "Web Development",
-                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set."
+                "description": "Building functional and responsive websites using modern technologies."
             },
             {
                 "no": "02",
                 "title": "UI/UX Design",
-                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set."
+                "description": "Creating intuitive and user-friendly digital experiences."
             },
             {
                 "no": "03",
                 "title": "Web Design",
-                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set."
+                "description": "Designing visually appealing and engaging website layouts."
             },
             {
                 "no": "04",
                 "title": "Graphic Design",
-                "description": "Lorem ipsum dolor sit amet sed consectetur adipisicing elit. doloret quas saepe autem, dolor set."
+                "description": "Crafting high-quality visuals, logos, and marketing materials."
             }
-        ]
+        ],
+        "skills": [
+        {
+            "title": "PHP",
+            "image": "/images/svg/php.svg"
+        },
+        {
+            "title": "LARAVEL",
+            "image": "/images/svg/laravel.svg"
+        },
+        {
+            "title": "HTML",
+            "image": "/images/svg/html.svg"
+        },
+        {
+            "title": "CSS",
+            "image": "/images/svg/css.svg"
+        },
+        {
+            "title": "BOOTSTRAP",
+            "image": "/images/svg/bootstrap.svg"
+        },
+        {
+            "title": "TAILWIND",
+            "image": "/images/svg/tailwind.svg"
+        },
+        {
+            "title": "JAVASCRIPT",
+            "image": "/images/svg/javascript.svg"
+        },
+        {
+            "title": "VUE",
+            "image": "/images/svg/vue.svg"
+        },
+        {
+            "title": "NUXT",
+            "image": "/images/svg/nuxt.svg"
+        },
+        {
+            "title": "MYSQL",
+            "image": "/images/svg/mysql.svg"
+        },
+        {
+            "title": "POSTGRESQL",
+            "image": "/images/svg/postgresql.svg"
+        },
+        {
+            "title": "RABBITMQ",
+            "image": "/images/svg/rabbitmq.svg"
+        },
+        {
+            "title": "GIT",
+            "image": "/images/svg/git.svg"
+        },
+        {
+            "title": "BITBUCKET",
+            "image": "/images/svg/bitbucket.svg"
+        },
+        {
+            "title": "LINUX",
+            "image": "/images/svg/linux.svg"
+        },
+        {
+            "title": "UBUNTU",
+            "image": "/images/svg/ubuntu.svg"
+        },
+        {
+            "title": "POSTMAN",
+            "image": "/images/svg/postman.svg"
+        },
+        {
+            "title": "INSOMNIA",
+            "image": "/images/svg/insomnia.svg"
+        },
+        {
+            "title": "FIGMA",
+            "image": "/images/svg/figma.svg"
+        },
+        {
+            "title": "CANVA",
+            "image": "/images/svg/canva.svg"
+        },
+        {
+            "title": "ADOBE PHOTOSHOP",
+            "image": "/images/svg/adobephotoshop.svg"
+        },
+        {
+            "title": "ADOBE ILLUSTRATOR",
+            "image": "/images/svg/adobeillustrator.svg"
+        },
+        {
+            "title": "GIMP",
+            "image": "/images/svg/gimp.svg"
+        }
+    ]
     }
 }

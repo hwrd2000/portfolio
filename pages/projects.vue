@@ -21,7 +21,6 @@
             <h5 class="title-small text-center">Projects</h5>
             <div class="row">
                 
-                    
                     <div class="col-md-4 col-sm-12 col-xs-12" v-for="project in data.portfolio.projects" v-bind:key="project">
                         <div class="item">
                             <div class="card">
@@ -32,7 +31,9 @@
                                     </div>
                                     <h4 class="number">{{project.no}}</h4>
                                     <h4><a >{{project.title}}</a></h4>
-                                    <p>{{project.description}}</p>
+                                    <p>{{ project.description }}</p>
+                                    <br>
+                                    <p><span style="background-color: yellow; padding: 2px 5px; font-style: italic;">For company use only.</span></p>
                                 </div>
 								</a>
                             </div>

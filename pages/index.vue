@@ -106,7 +106,7 @@ export default {
     },
     head() {
       return {
-        title: 'Home : '+this.data.main.name,
+        title: this.data.main.name,
         meta: [
           {
             hid: 'description',

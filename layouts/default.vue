@@ -13,20 +13,20 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                     <nuxt-link to="/" class="nav-link" >Home <span class="sr-only">(current)</span></nuxt-link>
-                  </li>
-                  <li class="nav-item @@about__active">
-                      <nuxt-link to="/About" class="nav-link" >About</nuxt-link>
-                  </li>
-                  <li class="nav-item @@projects__active">
-                      <nuxt-link to="/Projects" class="nav-link" >Project</nuxt-link>
-                  </li>
-                  <li class="nav-item @@contact__active">
-                      <nuxt-link to="/Contact" class="nav-link" >Contact</nuxt-link>
-                  </li>
-              </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <nuxt-link to="/" class="nav-link">Home <span class="sr-only">(current)</span></nuxt-link>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
           </div>
           
           <div class="mobile-position">

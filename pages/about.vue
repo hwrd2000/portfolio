@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-lg-8 mt-lg-0 mt-5">
                     <h5 class="title-small mb-2">Hello, I am {{data.main.designation}}</h5>
-                    <h3 class="title-big">Having {{data.main.yearofexperience}} Years of Experience</h3>
+                    <h1 class="mb-2 title"> <span>I'm</span> {{data.main.name}} </h1>
                     <p class="mt-4">{{data.main.bio}}</p>
                     <div class="my-info mt-4">
                         <div class="single-info"><span>Name:</span>
@@ -70,7 +70,7 @@
                             <div class="icon">
                                 <span class="fa fa-graduation-cap"></span>
                             </div>
-                            <h4><a href="">{{education.degree}}</a></h4>
+                            <h4>{{education.degree}}</h4>
                             <p>
                                 School : {{education.school}}<br>
                                 Graduated : {{education.graduated}}<br>
@@ -100,7 +100,7 @@
                             <div class="icon">
                                 <span class="fa fa-briefcase"></span>
                             </div>
-                            <h4><a href="">{{work.title}}</a></h4>
+                            <h4>{{work.title}}</h4>
                             <p>
                                 Company : {{work.company}}<br>
                                 Year : {{work.years}}<br>

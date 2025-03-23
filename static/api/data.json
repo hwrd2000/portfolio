@@ -2,8 +2,6 @@
     "main": {
         "name": "Howard Hontiveros",
         "occupation": "Web Developer",
-        "description": "",
-        "yearofexperience": "1 year, 5 months",
         "age": "24",
         "designation": "Web Developer",
         "image": "/images/1.png",
@@ -49,7 +47,8 @@
             "school": "University of Perpetual Help System DALTA - Las Piñas",
             "degree": "Bachelor of Science in Information Technology",
             "graduated": "August 2023",
-            "description": ""
+            "title": "Capstone Project: Dormitory Management System",
+            "description": "A web-based system for automating dormitory operations, including tenant management, room assignments, payments, attendance monitoring via QR codes, and reporting."
             }
         ],
         "work": [

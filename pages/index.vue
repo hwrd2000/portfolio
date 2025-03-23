@@ -1,7 +1,5 @@
 <template>
 <div>
-    
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
 <section id="home" class="w3l-banner py-5">
     <div class="container">
@@ -25,8 +23,8 @@
     </div>
 </section>
 
-
-<section class="w3l-index3" id="about">
+<!-- about -->
+<section class="w3l-aboutblock1" id="about">
     <div class="midd-w3 py-5">
         <div class="container py-lg-5 py-md-3">
             <div class="row">
@@ -39,21 +37,40 @@
                     <h5 class="title-small mb-2">Who am i?</h5>
                     <h3 class="title-big">I'm <b>{{data.main.name}}</b>, a {{data.main.occupation}}</h3>
                     <p class="mt-4">{{data.main.bio}}</p>
-                    <a :href="data.main.resumedownload" target="_blank" class="btn btn-style btn-primary mt-lg-5 mt-4">Download CV</a>
+                    <div class="my-info mt-4">
+                        <div class="single-info"><span>Name:</span>
+                            <p>{{data.main.name}}</p>
+                        </div>
+                        <div class="single-info"><span>Age:</span>
+                            <p>{{data.main.age}}</p>
+                        </div>
+                        <div class="single-info"><span>From:</span>
+                            <p>{{data.main.address.city}}, {{data.main.address.state}}</p>
+                        </div>
+                        <div class="single-info"><span>Email:</span>
+                            <p><a :href="data.main.email">{{data.main.email}}</a></p>
+                        </div>
+                    </div>
+                    <div class="my-social mt-lg-5 mt-4">
+                        <a :href="data.main.resumedownload" target="_blank" class="btn btn-style btn-primary">Download CV</a>
+                        <ul class="social m-0 p-0">
+                            <li v-for="social in data.main.social" v-bind:key="social" >
+                                <a :href="social.url"><span :class="social.className"></span></a>
+                            </li>
+                          </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="w3l-services">
-    <div class="blog" id="services">
+<!-- skills -->
+<section class="w3l-skills">
         <div class="container py-lg-5">
             <h5 class="title-small text-center">Skills</h5>
             <h3 class="title-big text-center mb-sm-5 mb-4">What I do for you</h3>
             <div class="row">
-                
-                    
                     <div class="col-md-4 col-sm-12 col-xs-12" v-for="service in data.services.services" v-bind:key="service">
                         <div class="item">
                             <div class="card">
@@ -68,52 +85,164 @@
                             </div>
                         </div>
                     </div>
-                    
-
             </div>
-            <div class="mt-5 text-more">
-                <p class="mt-4 pt-3 sample text-center">
-                    
-                </p>
+        </div>
+</section>
+
+<!-- work experience -->
+<section class="w3l-work-education py-5">
+        <div class="container">
+            <h5 class="title-small text-center">Work</h5>
+            <h3 class="title-big text-center mb-sm-5 mb-4">My Work Experience</h3>
+            <div class="row">
+                <div class="col-lg-6 item" v-for="work in data.resume.work" v-bind:key="work">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-briefcase"></span>
+                            </div>
+                            <h4><b>{{work.title}}</b></h4>
+                            <p>
+                                Company : {{work.company}}<br>
+                                Year : {{work.years}}<br>
+                                Description : {{work.description}}<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!-- education -->
+<section class="w3l-work-education">
+        <div class="container py-lg-5">
+            <h5 class="title-small text-center">Education</h5>
+            <h3 class="title-big text-center mb-sm-5">My Educations</h3>
+            <div class="row">
+                <div class="col-lg-6 item" v-for="education in data.resume.education" v-bind:key="education">
+                    <div class="card">
+                        <div class="box-wrap">
+                            <div class="icon">
+                                <span class="fa fa-graduation-cap"></span>
+                            </div>
+                            <h4><b>{{education.degree}}</b></h4>
+                            <p>
+                                School : {{education.school}}<br>
+                                Graduated : {{education.graduated}}<br>
+                                Description : <b>{{education.title}}</b> {{education.description}}<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- tech stacks -->
+<section class="w3l-tech-stacks py-2">
+    <div class="container">
+        <h5 class="title-small text-center">Skills</h5>
+        <h3 class="title-big text-center mb-sm-5 mb-4">Tech Stacks</h3>
+        <div class="row">
+            <div v-for="skill in data.services.skills" :key="skill">
+                <div class="stack-item">
+                    <div class="stack-card">
+                        <img :src="skill.image" alt="Skill Logo">
+                        <h4>{{ skill.title }}</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="w3l-services">
-    <div class="blog" id="services">
-        <div class="container">
-            <h5 class="title-small text-center">Skills</h5>
-            <h3 class="title-big text-center mb-sm-5 mb-4">Tech Stacks</h3>
+<!-- projects -->
+<section class="w3l-projects py-5" id="projects">
+        <div class="container py-lg-5">
+            <h5 class="title-small text-center">Projects</h5>
+            <h3 class="title-big text-center mb-sm-5">Featured Projects</h3>
             <div class="row">
-                <div class="col-md-4 col-sm-12 col-xs-12" v-for="skill in data.services.skills" :key="skill">
-                    <div class="item">
-                        <div class="card text-center">
-                            <div class="box-wrap">
-                                <img :src="skill.image" alt="Skill Logo" width="80" height="80">
-                                <h4 class="skill-title">{{ skill.title }}</h4>
+                    <div class="col-md-4 col-sm-12 col-xs-12" v-for="project in data.portfolio.projects" v-bind:key="project">
+                        <div class="item">
+                            <div class="card">
+								<a :href="project.url" target="_blank">
+                                <div class="box-wrap">
+                                    <div class="icon">
+                                        <span class="fa fa-pencil-square-o"></span>
+                                    </div>
+                                    <h4 class="number">{{project.no}}</h4>
+                                    <h4><b>{{project.title}}</b></h4>
+                                    <p>{{ project.description }}</p>
+                                    <br>
+                                    <p><span style="background-color: yellow; padding: 2px 5px; font-style: italic;">For company use only.</span></p>
+                                </div>
+								</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            <div class="my-social text-center">
+                <a href="https://github.com/hwrd2000?tab=repositories" target="_blank" class="btn btn-style btn-primary iconify">View more on GitHub</a>
             </div>
-            <div class="mt-5 text-more">
-                <p class="mt-4 pt-3 sample text-center"></p>
-            </div>
-        </div>  
-    </div>
+        </div>
 </section>
 
- <section class="w3l-grid-quote text-center py-5">
-   <div class="container py-3">
-     <h6 class="title-small">Get in touch</h6>
-     <h3 class="title-big mb-md-5 mb-4">Let's start a Project! Hire Me.</h3>
-     <router-link to="/contact" class="btn btn-style btn-primary mr-2">Hire Me </router-link>
-     <router-link to="/contact" class="btn btn-style btn-outline-primary">Get in touch</router-link>
-   </div>
- </section>
+<!-- contact -->
+<section class="w3l-contact-1 py-5" id="contact">
+        <div class="container">
+            <h5 class="title-small text-center">Contact</h5>
+            <h3 class="title-big text-center mb-sm-5">Contact me here</h3>
+            <div class="d-grid contact-view">
+                <div class="cont-details">
+                    <div class="cont-top">
+                        <div class="cont-left text-center">
+                            <span class="fa fa-phone text-primary"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>Call Me</h6>
+                            <p><a :href="'tel:'+data.main.phone">{{data.main.phone}}</a></p>
+                        </div>
+                    </div>
+                    <div class="cont-top margin-up">
+                        <div class="cont-left text-center">
+                            <span class="fa fa-envelope-o text-primary"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>Email Me</h6>
+                            <p><a :href="'mailto:'+data.main.email" class="mail">{{data.main.email}}</a></p>
+                        </div>
+                    </div>
+                    <div class="cont-top margin-up">
+                        <div class="cont-left text-center">
+                            <span class="fa fa-map-marker text-primary"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>Location</h6>
+                            <p>{{data.main.address.street}} , {{data.main.address.city}}, {{data.main.address.state}}, {{data.main.address.zip}}.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-content-9">
+                    <div class="cont-top" v-for="social in data.main.social" v-bind:key="social">
+                        <div class="cont-left text-center">
+                            <span :class="social.className"></span>
+                        </div>
+                        <div class="cont-right">
+                            <h6>{{social.name}}</h6>
+                            <p><a :href="social.url"><font size="2px">{{social.url}}</font></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
 
-
+<div class="map-iframe">
+    <iframe
+        :src="data.main.mapaddress"
+        width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
+</div>
 
 </div>
 </template>

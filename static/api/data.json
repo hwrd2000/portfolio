@@ -68,28 +68,80 @@
     },
     "portfolio": {
         "projects": [{
-                "no":"01",
+                "no": "01",
                 "title": "Inventory Management System",
                 "description": "A system for tracking and managing stock levels, orders, and suppliers.",
-                "url": ""
+                "url": "",
+                "technologies": [
+                    { "title": "PHP", "image": "/images/svg/php.svg" },
+                    { "title": "LARAVEL", "image": "/images/svg/laravel.svg" },
+                    { "title": "VUE", "image": "/images/svg/vue.svg" },
+                    { "title": "NUXT", "image": "/images/svg/nuxt.svg" },
+                    { "title": "MYSQL", "image": "/images/svg/mysql.svg" },
+                    { "title": "POSTGRESQL", "image": "/images/svg/postgresql.svg" },
+                    { "title": "HTML", "image": "/images/svg/html.svg" },
+                    { "title": "CSS", "image": "/images/svg/css.svg" },
+                    { "title": "BOOTSTRAP", "image": "/images/svg/bootstrap.svg" },
+                    { "title": "TAILWIND", "image": "/images/svg/tailwind.svg" },
+                    { "title": "JAVASCRIPT", "image": "/images/svg/javascript.svg" }
+                ]
             },
             {
                 "no":"02",
                 "title": "Academic Management System",
                 "description": "A platform for managing student records, courses, and faculty operations.",
-                "url": ""
+                "url": "",
+                "technologies": [
+                    { "title": "PHP", "image": "/images/svg/php.svg" },
+                    { "title": "LARAVEL", "image": "/images/svg/laravel.svg" },
+                    { "title": "VUE", "image": "/images/svg/vue.svg" },
+                    { "title": "NUXT", "image": "/images/svg/nuxt.svg" },
+                    { "title": "MYSQL", "image": "/images/svg/mysql.svg" },
+                    { "title": "POSTGRESQL", "image": "/images/svg/postgresql.svg" },
+                    { "title": "HTML", "image": "/images/svg/html.svg" },
+                    { "title": "CSS", "image": "/images/svg/css.svg" },
+                    { "title": "BOOTSTRAP", "image": "/images/svg/bootstrap.svg" },
+                    { "title": "TAILWIND", "image": "/images/svg/tailwind.svg" },
+                    { "title": "JAVASCRIPT", "image": "/images/svg/javascript.svg" }
+                ]
             },
             {
                 "no":"03",
                 "title": "Admission Management System",
                 "description": "A system that streamlines student enrollment and application processing.",
-                "url": ""
+                "url": "",
+                "technologies": [
+                    { "title": "PHP", "image": "/images/svg/php.svg" },
+                    { "title": "LARAVEL", "image": "/images/svg/laravel.svg" },
+                    { "title": "VUE", "image": "/images/svg/vue.svg" },
+                    { "title": "NUXT", "image": "/images/svg/nuxt.svg" },
+                    { "title": "MYSQL", "image": "/images/svg/mysql.svg" },
+                    { "title": "POSTGRESQL", "image": "/images/svg/postgresql.svg" },
+                    { "title": "HTML", "image": "/images/svg/html.svg" },
+                    { "title": "CSS", "image": "/images/svg/css.svg" },
+                    { "title": "BOOTSTRAP", "image": "/images/svg/bootstrap.svg" },
+                    { "title": "TAILWIND", "image": "/images/svg/tailwind.svg" },
+                    { "title": "JAVASCRIPT", "image": "/images/svg/javascript.svg" }
+                ]
             },
             {
                 "no":"04",
                 "title": "Human Resource Management System",
                 "description": "A tool for handling employee records, payroll, and performance tracking.",
-                "url": ""
+                "url": "",
+                "technologies": [
+                    { "title": "PHP", "image": "/images/svg/php.svg" },
+                    { "title": "LARAVEL", "image": "/images/svg/laravel.svg" },
+                    { "title": "VUE", "image": "/images/svg/vue.svg" },
+                    { "title": "NUXT", "image": "/images/svg/nuxt.svg" },
+                    { "title": "MYSQL", "image": "/images/svg/mysql.svg" },
+                    { "title": "POSTGRESQL", "image": "/images/svg/postgresql.svg" },
+                    { "title": "HTML", "image": "/images/svg/html.svg" },
+                    { "title": "CSS", "image": "/images/svg/css.svg" },
+                    { "title": "BOOTSTRAP", "image": "/images/svg/bootstrap.svg" },
+                    { "title": "TAILWIND", "image": "/images/svg/tailwind.svg" },
+                    { "title": "JAVASCRIPT", "image": "/images/svg/javascript.svg" }
+                ]
             }
         ]
     },
@@ -102,16 +154,11 @@
             },
             {
                 "no": "02",
-                "title": "UI/UX Design",
-                "description": "Creating intuitive and user-friendly digital experiences."
-            },
-            {
-                "no": "03",
                 "title": "Web Design",
                 "description": "Designing visually appealing and engaging website layouts."
             },
             {
-                "no": "04",
+                "no": "03",
                 "title": "Graphic Design",
                 "description": "Crafting high-quality visuals, logos, and marketing materials."
             }

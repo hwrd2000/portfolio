@@ -10658,6 +10658,44 @@ span.cursor {
   .w3l-projects .box-wrap {
     padding: 35px 25px; } }
 
+/* project tech stack icons */
+.tech-stack-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-stack-icons .tech-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  padding: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tech-stack-icons .tech-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tech-stack-icons .tech-icon:hover {
+  transform: scale(1.1);
+  border-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 384px) {
+  .tech-stack-icons {
+    justify-content: center;
+  }
+}
+
 .w3l-clients {
   background: var(--bg-color); }
 

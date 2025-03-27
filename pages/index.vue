@@ -10,8 +10,8 @@
                 <p>{{data.main.occupation}}
                 </p>
                 <div class="mt-sm-5 mt-4">
-                    <nuxt-link to="/Contact" class="btn btn-primary btn-style mr-2" > Hire Me </nuxt-link>
-                    <nuxt-link to="/Contact" class="btn btn-outline-primary btn-style mr-2" > Portfolio </nuxt-link>
+                    <a href="#contact" class="btn btn-primary btn-style mr-2" > Hire Me </a>
+                    <a href="#contact"  class="btn btn-outline-primary btn-style mr-2" > Portfolio </a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-4">
@@ -166,18 +166,23 @@
                     <div class="col-md-4 col-sm-12 col-xs-12" v-for="project in data.portfolio.projects" v-bind:key="project">
                         <div class="item">
                             <div class="card">
-								<a :href="project.url" target="_blank">
                                 <div class="box-wrap">
                                     <div class="icon">
                                         <span class="fa fa-pencil-square-o"></span>
                                     </div>
                                     <h4 class="number">{{project.no}}</h4>
+                                    <a :href="project.url" target="_blank">
                                     <h4><b>{{project.title}}</b></h4>
+								    </a>
                                     <p>{{ project.description }}</p>
                                     <br>
                                     <p><span style="background-color: yellow; padding: 2px 5px; font-style: italic;">For company use only.</span></p>
+                                    <div class="tech-stack-icons">
+                                        <div v-for="tech in project.technologies" :key="tech.title" class="tech-icon">
+                                            <img :src="tech.image" :alt="tech.title + ' Logo'">
+                                        </div>
                                 </div>
-								</a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -224,7 +224,7 @@
                         </div>
                         <div class="cont-right">
                             <h6>Location</h6>
-                            <p>{{data.main.address.street}} , {{data.main.address.city}}, {{data.main.address.state}}, {{data.main.address.zip}}.</p>
+                            <p>{{data.main.address.street}} {{data.main.address.city}}, {{data.main.address.state}}, {{data.main.address.zip}}.</p>
                         </div>
                     </div>
                 </div>

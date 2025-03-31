@@ -70,7 +70,7 @@
         "projects": [{
                 "no": "01",
                 "title": "Inventory Management System",
-                "description": "A system for tracking and managing stock levels, orders, and suppliers.",
+                "description": "Developed a web-based inventory management system to track stock levels, orders, and supplier information. Improved efficiency by automating inventory updates and reducing manual errors.",
                 "url": "",
                 "technologies": [
                     { "title": "PHP", "image": "/images/svg/php.svg" },
@@ -81,7 +81,6 @@
                     { "title": "POSTGRESQL", "image": "/images/svg/postgresql.svg" },
                     { "title": "HTML", "image": "/images/svg/html.svg" },
                     { "title": "CSS", "image": "/images/svg/css.svg" },
-                    { "title": "BOOTSTRAP", "image": "/images/svg/bootstrap.svg" },
                     { "title": "TAILWIND", "image": "/images/svg/tailwind.svg" },
                     { "title": "JAVASCRIPT", "image": "/images/svg/javascript.svg" }
                 ]
@@ -89,7 +88,7 @@
             {
                 "no":"02",
                 "title": "Academic Management System",
-                "description": "A platform for managing student records, courses, and faculty operations.",
+                "description": "Contributed to the development of an academic management system for handling student records, course enrollments, and faculty operations. Focused on optimizing data management and system usability.",
                 "url": "",
                 "technologies": [
                     { "title": "PHP", "image": "/images/svg/php.svg" },
@@ -100,7 +99,6 @@
                     { "title": "POSTGRESQL", "image": "/images/svg/postgresql.svg" },
                     { "title": "HTML", "image": "/images/svg/html.svg" },
                     { "title": "CSS", "image": "/images/svg/css.svg" },
-                    { "title": "BOOTSTRAP", "image": "/images/svg/bootstrap.svg" },
                     { "title": "TAILWIND", "image": "/images/svg/tailwind.svg" },
                     { "title": "JAVASCRIPT", "image": "/images/svg/javascript.svg" }
                 ]
@@ -108,7 +106,7 @@
             {
                 "no":"03",
                 "title": "Admission Management System",
-                "description": "A system that streamlines student enrollment and application processing.",
+                "description": "Developed and deployed an Admission Management System to streamline student enrollment and application processing, improving efficiency for a large number of users.",
                 "url": "",
                 "technologies": [
                     { "title": "PHP", "image": "/images/svg/php.svg" },
@@ -119,7 +117,6 @@
                     { "title": "POSTGRESQL", "image": "/images/svg/postgresql.svg" },
                     { "title": "HTML", "image": "/images/svg/html.svg" },
                     { "title": "CSS", "image": "/images/svg/css.svg" },
-                    { "title": "BOOTSTRAP", "image": "/images/svg/bootstrap.svg" },
                     { "title": "TAILWIND", "image": "/images/svg/tailwind.svg" },
                     { "title": "JAVASCRIPT", "image": "/images/svg/javascript.svg" }
                 ]
@@ -127,7 +124,7 @@
             {
                 "no":"04",
                 "title": "Human Resource Management System",
-                "description": "A tool for handling employee records, payroll, and performance tracking.",
+                "description": "Built and maintained a human resource management system to streamline employee record management, payroll processing, and performance tracking. Ensured data security and system reliability.",
                 "url": "",
                 "technologies": [
                     { "title": "PHP", "image": "/images/svg/php.svg" },
@@ -138,7 +135,6 @@
                     { "title": "POSTGRESQL", "image": "/images/svg/postgresql.svg" },
                     { "title": "HTML", "image": "/images/svg/html.svg" },
                     { "title": "CSS", "image": "/images/svg/css.svg" },
-                    { "title": "BOOTSTRAP", "image": "/images/svg/bootstrap.svg" },
                     { "title": "TAILWIND", "image": "/images/svg/tailwind.svg" },
                     { "title": "JAVASCRIPT", "image": "/images/svg/javascript.svg" }
                 ]
@@ -150,17 +146,17 @@
             {
                 "no": "01",
                 "title": "Web Development",
-                "description": "Building functional and responsive websites using modern technologies."
+                "description": "Creating responsive and user-friendly websites using modern web technologies."
             },
             {
                 "no": "02",
                 "title": "Web Design",
-                "description": "Designing visually appealing and engaging website layouts."
+                "description": "Designing intuitive and visually appealing website layouts that enhance user experience."
             },
             {
                 "no": "03",
                 "title": "Graphic Design",
-                "description": "Crafting high-quality visuals, logos, and marketing materials."
+                "description": "Designing logos, marketing materials, and digital assets with a focus on quality and creativity."
             }
         ],
         "skills": [

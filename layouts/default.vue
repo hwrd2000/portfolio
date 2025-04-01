@@ -55,7 +55,7 @@
   <div class="container d-flex justify-content-center">
     <div class="footer-content text-center">
         <ul class="social m-0 p-0">
-          <li v-for="socaildata in data.main.social" v-bind:key="socaildata">
+            <li v-for="socaildata in data.main.social" :key="socaildata.name">
             <a :href="socaildata.url"><span :class="socaildata.className"></span></a>
           </li>
         </ul>

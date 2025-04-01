@@ -54,7 +54,7 @@
                     <div class="my-social mt-lg-5 mt-4">
                         <a :href="data.main.resumedownload" target="_blank" class="btn btn-style btn-primary">Download CV</a>
                         <ul class="social m-0 p-0">
-                            <li v-for="social in data.main.social" v-bind:key="social" >
+                            <li v-for="social in data.main.social" :key="social.name">
                                 <a :href="social.url"><span :class="social.className"></span></a>
                             </li>
                           </ul>
@@ -71,7 +71,7 @@
             <h5 class="title-small text-center">Skills</h5>
             <h3 class="title-big text-center mb-sm-5 mb-4">What I do for you</h3>
             <div class="row">
-                    <div class="col-md-4 col-sm-12 col-xs-12" v-for="service in data.services.services" v-bind:key="service">
+                    <div class="col-md-4 col-sm-12 col-xs-12" v-for="service in data.services.services" :key="service.title">
                         <div class="item">
                             <div class="card">
                                 <div class="box-wrap">
@@ -95,7 +95,7 @@
             <h5 class="title-small text-center">Work</h5>
             <h3 class="title-big text-center mb-sm-5 mb-4">My Work Experience</h3>
             <div class="row">
-                <div class="col-lg-6 item" v-for="work in data.resume.work" v-bind:key="work">
+                <div class="col-lg-6 item" v-for="work in data.resume.work" :key="work.title">
                     <div class="card">
                         <div class="box-wrap">
                             <div class="icon">
@@ -120,7 +120,7 @@
             <h5 class="title-small text-center">Education</h5>
             <h3 class="title-big text-center mb-sm-5">My Educations</h3>
             <div class="row">
-                <div class="col-lg-6 item" v-for="education in data.resume.education" v-bind:key="education">
+                <div class="col-lg-6 item" v-for="education in data.resume.education" :key="education.degree">
                     <div class="card">
                         <div class="box-wrap">
                             <div class="icon">
@@ -145,7 +145,7 @@
         <h5 class="title-small text-center">Skills</h5>
         <h3 class="title-big text-center mb-sm-5 mb-4">Tech Stacks</h3>
         <div class="row">
-            <div v-for="skill in data.services.skills" :key="skill">
+            <div v-for="skill in data.services.skills" :key="skill.title">
                 <div class="stack-item">
                     <div class="stack-card">
                         <img :src="skill.image" alt="Skill Logo">
@@ -163,7 +163,8 @@
             <h5 class="title-small text-center">Projects</h5>
             <h3 class="title-big text-center mb-sm-5">Featured Projects</h3>
             <div class="row">
-                    <div class="col-md-4 col-sm-12 col-xs-12" v-for="project in data.portfolio.projects" v-bind:key="project">
+                    <!-- <div class="col-md-4 col-sm-12 col-xs-12" v-for="project in data.portfolio.projects" :key="project.title"> -->
+                    <div v-for="project in data.portfolio.projects" :key="project.title">
                         <div class="item">
                             <div class="card">
                                 <div class="box-wrap">
@@ -229,7 +230,7 @@
                     </div>
                 </div>
                 <div class="map-content-9">
-                    <div class="cont-top" v-for="social in data.main.social" v-bind:key="social">
+                    <div class="cont-top" v-for="social in data.main.social" :key="social.name">
                         <div class="cont-left text-center">
                             <span :class="social.className"></span>
                         </div>

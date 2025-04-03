@@ -11,7 +11,7 @@
                 </p>
                 <div class="mt-sm-5 mt-4">
                     <a href="#contact" class="btn btn-primary btn-style mr-2" > Hire Me </a>
-                    <a href="#contact"  class="btn btn-outline-primary btn-style mr-2" > Portfolio </a>
+                    <!-- <a href="#contact"  class="btn btn-outline-primary btn-style mr-2" > Portfolio </a> -->
                 </div>
             </div>
             <div class="col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-4">
@@ -116,7 +116,7 @@
 
 <!-- education -->
 <section class="w3l-work-education">
-        <div class="container py-lg-5">
+        <div class="container py-lg-2">
             <h5 class="title-small text-center">Education</h5>
             <h3 class="title-big text-center mb-sm-5">My Educations</h3>
             <div class="row">

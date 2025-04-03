@@ -3,24 +3,28 @@
     "name": "about",
     "path": "/about",
     "component": "/var/www/personal/portfolio/pages/about.vue",
-    "chunkName": "pages/about"
+    "chunkName": "pages/about",
+    "_name": "_0de8845d"
   },
   {
     "name": "contact",
     "path": "/contact",
     "component": "/var/www/personal/portfolio/pages/contact.vue",
-    "chunkName": "pages/contact"
+    "chunkName": "pages/contact",
+    "_name": "_3855b570"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "/var/www/personal/portfolio/pages/projects.vue",
-    "chunkName": "pages/projects"
+    "chunkName": "pages/projects",
+    "_name": "_7c3c334c"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/var/www/personal/portfolio/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_2da05f22"
   }
 ]

@@ -1,7 +1,7 @@
 <template>
 <div>
 
-<section id="home" class="w3l-banner py-5">
+<section id="home" class="w3l-banner py-5" data-aos="fade-up">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
@@ -24,7 +24,7 @@
 </section>
 
 <!-- about -->
-<section class="w3l-aboutblock1" id="about">
+<section class="w3l-aboutblock1" id="about" data-aos="fade-up">
     <div class="midd-w3 py-5">
         <div class="container py-lg-5 py-md-3">
             <div class="row">
@@ -66,7 +66,7 @@
 </section>
 
 <!-- skills -->
-<section class="w3l-skills">
+<section class="w3l-skills" data-aos="fade-up">
         <div class="container py-lg-5">
             <h5 class="title-small text-center">Skills</h5>
             <h3 class="title-big text-center mb-sm-5 mb-4">What I do for you</h3>
@@ -90,7 +90,7 @@
 </section>
 
 <!-- work experience -->
-<section class="w3l-work-education py-5">
+<section class="w3l-work-education py-5" data-aos="fade-up">
         <div class="container">
             <h5 class="title-small text-center">Work</h5>
             <h3 class="title-big text-center mb-sm-5 mb-4">My Work Experience</h3>
@@ -115,7 +115,7 @@
 </section>
 
 <!-- education -->
-<section class="w3l-work-education">
+<section class="w3l-work-education" data-aos="fade-up">
         <div class="container py-lg-2">
             <h5 class="title-small text-center">Education</h5>
             <h3 class="title-big text-center mb-sm-5">My Educations</h3>
@@ -140,7 +140,7 @@
 </section>
 
 <!-- tech stacks -->
-<section class="w3l-tech-stacks py-2">
+<section class="w3l-tech-stacks py-2" data-aos="fade-up">
     <div class="container">
         <h5 class="title-small text-center">Skills</h5>
         <h3 class="title-big text-center mb-sm-5 mb-4">Tech Stacks</h3>
@@ -158,7 +158,7 @@
 </section>
 
 <!-- projects -->
-<section class="w3l-projects py-5" id="projects">
+<section class="w3l-projects py-5" id="projects" data-aos="fade-up">
         <div class="container py-lg-5">
             <h5 class="title-small text-center">Projects</h5>
             <h3 class="title-big text-center mb-sm-5">Featured Projects</h3>
@@ -195,7 +195,7 @@
 </section>
 
 <!-- contact -->
-<section class="w3l-contact-1 py-5" id="contact">
+<section class="w3l-contact-1 py-5" id="contact" data-aos="fade-up">
         <div class="container">
             <h5 class="title-small text-center">Contact</h5>
             <h3 class="title-big text-center mb-sm-5">Contact me here</h3>
@@ -255,6 +255,9 @@
 
 <script>
 import data from '~/static/api/data.json'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 export default {
     
     name:"index",
@@ -263,6 +266,12 @@ export default {
             data:data,
 			
         }
+    },
+    mounted() {
+    AOS.init({
+      duration: 800,
+      once: true
+    });
     },
     head() {
       return {

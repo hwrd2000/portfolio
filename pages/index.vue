@@ -267,12 +267,17 @@ export default {
 			
         }
     },
-    mounted() {
+
+    mounted() { //scroll animation
     AOS.init({
-      duration: 800,
-      once: true
+        duration: 800,      // animation duration
+        easing: 'ease-in-out', // smoother feel
+        offset: 100,        // offset (px) before the animation kicks in
+        once: false,        // animate on both scroll directions
+        mirror: true
     });
     },
+
     head() {
       return {
         title: this.data.main.name,

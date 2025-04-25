@@ -63,9 +63,15 @@
 </div>
 
   
-  <button onclick="topFunction()" id="movetop" title="Go to top">
-    <span class="fa fa-angle-up"></span>
-  </button>
+<button
+  id="movetop"
+  title="Go to top"
+  @mousedown="startDrag"
+  @mouseup="endDrag"
+  @click="handleClick"
+  style="position:fixed; bottom:20px; right:20px; cursor:grab; z-index:9999; transition: left 0.05s linear, top 0.05s linear;">
+  <span class="fa fa-angle-up"></span>
+</button>
 
 </section>
 
@@ -75,13 +81,93 @@
 <script>
 import data from '~/static/api/data.json'
 export default {
-    
-    name:"index",
-    data(){
-        return {
-            data:data,
-			
-        }
-    }
-}
+  name: "index",
+  data() {
+    return {
+      data: data,
+      dragging: false,
+      wasDragged: false,
+      offsetX: 0,
+      offsetY: 0,
+      startX: 0,
+      startY: 0,
+      buttonEl: null,
+    };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Reset button position after scroll animation
+      setTimeout(() => {
+        this.resetButtonPosition();
+      }, 500);
+    },
+    handleClick(e) {
+      if (!this.wasDragged) {
+        this.topFunction();
+      }
+      this.wasDragged = false; // reset after each click attempt
+    },
+    startDrag(e) {
+      this.buttonEl = document.getElementById("movetop");
+      this.dragging = true;
+      this.wasDragged = false;
+      this.startX = e.clientX;
+      this.startY = e.clientY;
+      this.offsetX = e.clientX - this.buttonEl.offsetLeft;
+      this.offsetY = e.clientY - this.buttonEl.offsetTop;
+
+      document.addEventListener("mousemove", this.queueDrag);
+      document.addEventListener("mouseup", this.stopDrag);
+    },
+    endDrag(e) {
+      const moveX = Math.abs(e.clientX - this.startX);
+      const moveY = Math.abs(e.clientY - this.startY);
+      if (moveX > 5 || moveY > 5) {
+        this.wasDragged = true;
+      }
+    },
+    queueDrag(e) {
+      if (this.dragging) {
+        const x = e.clientX - this.offsetX;
+        const y = e.clientY - this.offsetY;
+        window.requestAnimationFrame(() => this.drag(x, y));
+      }
+    },
+    drag(x, y) {
+      if (this.buttonEl) {
+        this.buttonEl.style.left = `${x}px`;
+        this.buttonEl.style.top = `${y}px`;
+        this.buttonEl.style.bottom = 'auto';
+        this.buttonEl.style.right = 'auto';
+      }
+    },
+    stopDrag() {
+      this.dragging = false;
+      document.removeEventListener("mousemove", this.queueDrag);
+      document.removeEventListener("mouseup", this.stopDrag);
+    },
+    handleScroll() {
+      if (window.scrollY <= 10) {
+        this.resetButtonPosition();
+      }
+    },
+    resetButtonPosition() {
+      const button = document.getElementById("movetop");
+      if (button) {
+        button.style.left = '';
+        button.style.top = '';
+        button.style.bottom = '20px';
+        button.style.right = '20px';
+      }
+    },
+  },
+};
 </script>
